@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+.barNav{
+    background:purple;
+    color:#fff;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.barNav a{
+    color:#fff;
+    font-size:2rem;
+    text-decoration:none;
+    margin-right:1rem;
+    padding:2rem;
+}
+
+.barNav a:hover{
+    background:white;
+    color:#000;
+}
+

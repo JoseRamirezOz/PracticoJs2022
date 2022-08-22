@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Test de Js</title>
+</head>
+<body>
+    <nav class="barNav">
+        <a href="">Test</a>
+        <a href="">Taller 1</a>
+        <a href="">Taller 2</a>
+    </nav>
+
+    <h1>Inicio de test JavaScript</h1>
+
+    <section>
+        <h2>Primer Modulo</h2>
+        <p><b>¿Qué es una variable y para qué sirve?</b></p>
+        <p>Es un espacio en memoria que nos permite alojar 
+            algun tipo de dato, podemos hacer la analogia 
+            a una caja donde guardamos cosas que probablemente
+            utilizaremos mas tarde, mas sin embargo tambien esta
+            caja puede quedar vacia un tiempo
+        </p>
+    
+        <br>
+        <br>
+    
+        <p><b>¿Cuál es la diferencia entre declarar e inicializar una variable?</b></p>
+        <p>
+            <b>Declarar:</b> Significa simplente nombrar una variable pero esta 
+            no tendra ningun dato asignado, posteriormente en el transcurso
+            de nuestro programa podremos o no asignarle un valor y a 
+            esta accion le llamamos <b>inicializar</b> la variable
+        </p>
+    
+        <br>
+        <br>
+    
+        <p><b>¿Cuál es la diferencia entre sumar números y concatenar strings?</b></p>
+        <p>Al sumar numeros efectivamente hacemos dicha operacion 
+            matematica, cuando contatemos strings lo que hacemos
+            es juntar esa cadena de datos 
+        </p>
+    
+        <br>
+        <br>
+    
+        <p><b>¿Cuál operador me permite sumar o concatenar?</b></p>
+        <p>Para ambos caso podemos emplear en signo + la 
+            cuestion sera en la forma en la cual escribimos 
+            esa instruccion no es lo mismo escribir <b>4+4</b>
+            cuyo resultado sera 4 por que realmente se hace 
+            la operacion matematica a escribir <b>"4+4"</b> cuyo
+            resultado sera 44. El uso de una 'comilla simple' o 
+            "comilla doble" implica que nuestro tipo de dato es un 
+            texto o string y para este no aplica ninguna operacion
+            matematica lo que hara sera juntar ese caracter o conjunto
+            de caracteres
+        </p>
+    </section>
+
+    <section>
+        <h2>Segundo Modulo</h2>
+        <p><b>Determina el nombre y tipo de dato para almacenar en variables la siguiente información:</b></p>
+        <p>
+           <ul>
+            <li>Nombre: José - String</li>
+            <li>Apellido: Ramiréz - String</li>
+            <li>Nombre de usuario en Platzi: <b>JoseRamirezOz</b> - String</li>
+            <li>Edad: 22 - Number</li>
+            <li>Correo electrónico: albertoramirezq@outlook.com - String</li>
+            <li>Mayor de edad: Si - Boolean</li>
+            <li>Dinero ahorrado: 0 - Number</li>
+            <li>Deudas:1000 - Number</li>
+           </ul> 
+        </p>   
+    </section>
+
+    <section>
+        <h2>Tercer Modulo</h2>
+        <p><b>Traduce a código JavaScript las variables del ejemplo anterior</b></p>
+        <p>
+            let nombre = "Jose",
+                <br>
+                apellido = "Ramirez",
+                <br>
+                userName = "JoseRamirezOz,
+                <br>
+                edad = 22,
+                <br>
+                email = "albertoramirezq@outlook.com",
+                <br>
+                mayorDeEdad = true,
+                <br>
+                dineroAhorrado = 0,
+                <br>
+                deudas = 1000;
+        </p>
+    </section>
+
+    <section>
+        <h2>Cuarto Modulo</h2>
+        <p><b> Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:</b></p>
+        <p><i>Si examinas esta seccion las operaciones estan hechas 
+            con js por detras</i>
+        </p>
+        <script>
+            let name = "José",
+                apellido = "Ramiréz",
+                dineroAhorrado = 0,
+                deudas = 1000;
+
+            document.write(`Nombre completo: ${name+ " " +apellido}`);
+            document.write("</br>")
+            document.write(`Dinero ahorrado menos deudas: ${dineroAhorrado-deudas}`);
+        </script>
+    </section>
+
+    <section>
+        <h2>Quinto modulo Funciones</h2>
+        <p><b>¿Qué es una función?</b></p>
+        <p>Podemos tener la analogia de una maquina
+            a la cual se le introduce algo, se realiza 
+            un proceso y nos otorga una salida
+        </p>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
