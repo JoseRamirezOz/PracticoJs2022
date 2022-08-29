@@ -232,8 +232,7 @@
               let completeName = `${nombre} ${apellido}`
       
               let resultado = 
-                `Mi nombre es  ${completeName},
-                pero prefiero que me digas${nickName}.`
+                `Mi nombre es  ${completeName}, pero prefiero que me digas ${nickName}.`
 
               let textResultado = document.createElement("p")
               textResultado.className = "viewResultado"
@@ -252,12 +251,103 @@
               document.querySelector(".apellido").value = ''
               document.querySelector(".nickName").value = ''
 
-              document.querySelector(".viewResultado").remove()
+              if(document.querySelector(".viewResultado") !== null)
+                document.querySelector(".viewResultado").remove()
             })
           </script>
         </article>
     </section>
 
+    <section>
+      <h2>Sexto modulo, Condicionales</h2>
+
+      <p><b>¿Qué es un condicional?</b></p>
+      <p>Es una relación logica que nos permite tomar 
+        una decision en base a 2 o mas criterios, que nos
+        retorne un valor booleano
+      </p>
+
+      <p><b>¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?</b></p>
+      <p>Tenemos 3 tipos de condicioneles:
+        <ol>
+          <li>If, Else If, y If Else: divimos este en
+            3 apartados ya que podemos crear 1 bloque 
+            que solo nos de un resultado si se cumple 
+            pero si no se cumple no habra ninguna acción
+            mas por hacer esto corresponde a ecribir:
+            <img src="if.png" alt=""> 
+
+            Tenemos <strong>Else If</strong> y este buscara
+            mas opciones si es que la primera condicional
+            no se cumple, estas opciones donde buscara se le
+            definen mas condicionales para verificar si cumple alguna de ellas
+            <img src="elseIf.png" alt="">
+
+
+            Por ultimo tenemos <strong>If Else</strong>:
+            Tiene una opcion "por default" es decir que si 
+            ninguna de las condicionales logicas se cumplio
+            pasara a esta ultima opción.
+
+            <img src="ifElse.png" alt="">
+
+          </li>
+
+
+          <li>Switch Case: Podriamos traducirlo a un <strong>else if</strong>
+            ya que nos permite evaluar multiples opciones ¿Que cambia?
+            bueno solamente su estructura pero nos ayuda a llevar un 
+            mejor control en la lectura y legibilidad del codigo.
+            Se compone de casos donde si uno resulta ser igual
+            bueno podemos realizar una acción, al finalizar cada
+            caso debemos concluir con un break ya que si no lo ponemos
+            el programa no se detendra y segira evaluando
+            los demas casos dandonos así un resultado no esperado
+            por ultimo de forma opcinal podemos colocar una
+            acción por defautl en caso de que ninguno de los 
+            casos coincida con el valor dado
+            <img src="switchCase.png" alt="">
+
+          </li>
+          <li>Operador ternario: Este es un condicional de 
+            una sola linea y se a incorporado en las nuevas versiones 
+            de EcmaScript 6+ nos permite llevar una limpieza de 
+            codigo, escritura y legibilidad al momento de hacer condicionales.
+            Este metodo solo se puede emplear si nuestro valor de la operación
+            logica retorna un true o false
+
+            <img src="operadorTernario.png" alt="">
+          </li>
+        </ol>
+      </p>
+
+      <p><b>¿Puedo combinar funciones y condicionales?</b></p>
+      <p>Sí cualquier proceso que retorne un resultad se 
+        puede llevar a cabo en una función
+      </p>
+
+
+      <h2>Sexto modulo: Fase practica</h2>
+      <p><b>Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:</b></p>
+      <p>
+        const tipoDeSuscripcion = "Basic";
+
+        switch (tipoDeSuscripcion) {
+          case "Free":
+              console.log("Solo puedes tomar los cursos gratis");
+              break;
+          case "Basic":
+              console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+              break;
+          case "Expert":
+              console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+              break;
+          case "ExpertPlus":
+              console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+              break;
+        }
+      </p>
+      <img src="switchToElseIf.png" alt="">
 
 
 
